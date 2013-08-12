@@ -26,7 +26,7 @@ function applyCSS() {
     if (response && response.success) {
       if (response.global) {
         stylebotTempGlobalRules = response.global;
-        CSSUtils.crunchCSS(response.global, true, true, function(css) {
+        CSSUtils.crunchCSS(response.global, false, true, function(css) {
           if (css != '') {
             CSSUtils.injectCSS(css, 'stylebot-global-css');
           }
