@@ -8,7 +8,7 @@ function cssFormatter(setImportant, compactCSS) {
   this.COMMENT_PREFIX = "comment";
   this.AT_IMPORT_RULE_TYPE = "@import";
 
-  this.setImportant = setImportant;
+  this.setImportant = false;//true;//setImportant;
   this.compactCSS = compactCSS;
   this.preserveComments = !compactCSS;
 
